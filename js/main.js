@@ -1,3 +1,11 @@
+    // typing text animation script
+var typed = new Typed(".typing", {
+    strings: ["Web Designer", "Developer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
 document.addEventListener("click", function(e) {
     if (e.target.classList.contains("gallery")) {
         const src = e.target.getAttribute("src");
@@ -53,15 +61,6 @@ $(document).ready(function() {
     $(document).on('submit', '#myForm', function() {
         return false;
     });
-
-
-    // typing text animation script
-var typed = new Typed(".typing", {
-    strings: ["Web Designer", "Developer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
 
 }); 
 
