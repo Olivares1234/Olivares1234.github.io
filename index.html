@@ -1,24 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <title>My First Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-</head>
-<body>
-<h1>HELLO FUCKERS</h1>
-
-	  <h1 class="text-danger text-uppercase fs-1 fw-bold"><div><span class="typing"></span></div></h1>
-	
-	    <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    
+    <body>
+        
+        <!-- navbar start -->
+        <nav class="navbar navbar-light bg-light shadow-sm fixed-top scrolling-navbar">
+            <div class="container-lg">
+                <a class="navbar-brand text-danger fw-bold fs-3" href="#">My Portfolio</a>
+                <div class="dropdown">
+                    <button class="btn btn-secondary btn-warning px-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#home">Home</a></li>
+                        <li><a class="dropdown-item" href="#about">About</a></li>
+                        <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                        <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nabvar End -->
+        
+        <!--home section start-->
+        <section class="home bg-white shadow-lg py-5" id="home">
+            <div class="container-lg ">
+                <div class="row min-vh-100 align-items-center align-content-center">
+                    <div class="col-md-6 mt-5 mt-md-0">
+                        <div class="home-img text-center">
+                            <img src="img/profile_rev1.jpg" class="rounded-circle mw-100" alt="My Profile">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+                        <div class="home-text">
+                            <span class="typing"></span>
+                            <p class="text-muted mb-1">Hello I'm</p>
+                            <h1 class="text-danger text-uppercase fs-1 fw-bold"><div></div></h1>
+                            <h2 class="fs-4">Gabriel Olivares</h2>
+                            <p class="mt-4">Hi, I'm Gabriel Olivares I'm really passionate about making developing, website designs because I love it and I really enjoy doing website design.</p>
+                            <a href="#portfolio" class="btn btn-warning px-3 mt-3 fs-5 fw-bold">My Works</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--home section end-->
+        
+        <!--about section start-->
+        <section class="about bg-white shadow-lg py-5" id="about">
+            <div class="container-lg py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h2 class="fw-bold mb-5 text-danger">About Me</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about-text">
+                            <h3 class="fs-4 mb-3">Web Design & Development</h3>
+                            <p class="text-muted">I'm Gab I love doing projects like the Web, Applications I learned a lot when I created systems I wanted to explore what I learned when I was just in college I wanted to expand what I learned and apply in the IT field industry
+                            I want it as my career. I like to spend time developing web projects and applications and I also tend to solve problems about the system.</p>
+                        </div>
+                        <!-- <div class="row text-center text-uppercase my-3 ">
+                            <div class="col-sm-4 ">
+                                <div class="fact-item ">
+                                    <h4 class="fs-1 fw-bold ">5</h4>
+                                    <p class="text-muted ">Projects Completed</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <div class="fact-item ">
+                                    <h4 class="fs-1 fw-bold ">2</h4>
+                                    <p class="text-muted ">Happy Clients</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <div class="fact-item ">
+                                    <h4 class="fs-1 fw-bold ">20</h4>
+                                    <p class="text-muted ">Positive Review</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="row">
+                            <div class="col-lg-12 d-flex align-items-center mt-md-0">
+                                <a href="# " class="btn btn-warning me-5 fw-bold ">Download CV</a>
+                                <div class="social-auth-links">
+                                    <a href="https://www.facebook.com/nexus.eon" target="_blank" class="text-primary me-2"><i class="fab fa-facebook fa-2x"></i></a>
+                                    <a href="#" class="me-2" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                    <a href="https://www.linkedin.com/in/gabriel-olivares-47938118a/" target="_blank" class="text-info me-2"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-1 mb-0">
+                        <div class="skill-item mb-4">
+                            <h3 class="fs-6 ">HTML</h3>
+                            <div class="progress ">
+                                <div class="progress-bar progress-bar-striped bg-danger fs-6 fw-bold" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-4">
+                            <h3 class="fs-6 ">CSS</h3>
+                            <div class="progress ">
+                                <div class="progress-bar progress-bar-striped bg-success fs-6 fw-bold " role="progressbar " style="width: 70%; " aria-valuenow="70 " aria-valuemin="0 " aria-valuemax="100 ">70%</div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-4 ">
+                            <h3 class="fs-6 ">JAVASCRIPT</h3>
+                            <div class="progress ">
+                                <div class="progress-bar progress-bar-striped bg-info fs-6 fw-bold " role="progressbar " style="width: 60%; " aria-valuenow="60 " aria-valuemin="0 " aria-valuemax="100 ">60%</div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-4 ">
+                            <h3 class="fs-6 ">PHP</h3>
+                            <div class="progress ">
+                                <div class="progress-bar progress-bar-striped bg-warning fs-6 fw-bold " role="progressbar " style="width: 60%; " aria-valuenow="50 " aria-valuemin="0 " aria-valuemax="100 ">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--about section end-->
+        
+        <!-- service section start -->
+        <section class="service bg-white shadow-lg py-5">
+            <div class="container-lg ">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 ">
+                        <div class="section-title text-center ">
+                            <h2 class="fw-bold mb-5 text-danger ">What I Do</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <a href="#portfolio ">
+                        <div class="box col-md-6 col-lg-4 mb-4">
+                            <div class="service-item shadow-sm p-4 rounded bg-white">
+                                <div class="icon my-3 text-danger fs-2">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </a>
+                            <h3 class="fs-5 py-2">Web Development</h3>
+                            <p class="text-muted">Creating a visually interesting home page, layout and user-friendly design website.</p>
+                        </div>
+                    </div>
+                    <div class="box col-md-6 col-lg-4 mb-4">
+                        <a href="#portfolio ">
+                            <div class="service-item shadow-sm p-4 rounded bg-white">
+                                <div class="icon my-3 text-danger fs-2">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                            </a>
+                            <h3 class="fs-5 py-2">Application Development</h3>
+                            <p class="text-muted">Creating Application for software, testing, and Build Android Apps.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box col-md-6 col-lg-4 mb-4">
+                        <a href="#portfolio ">
+                            <div class="service-item shadow-sm p-4 rounded bg-white">
+                                <div class="icon my-3 text-danger fs-2">
+                                    <i class="fas fa-image"></i>
+                                </div>
+                            </a>
+                            <h3 class="fs-5 py-2">Photoshop</h3>
+                            <p class="text-muted">Creating such as logo, Banner, Brochure and Editing Photos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service section end -->
+        
+        <!-- portfolio section start -->
+        <section class="portfolio bg-white shadow-lg py-5" id="portfolio">
+            <div class="container-lg py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 ">
+                        <div class="section-title text-center">
+                            <h2 class="fw-bold mb-5 text-danger">My Works</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="portfolio-item gallery ">
+                            <img src="img/pos-inventory-system.jpg " class="gallery w-100 img-thumbnail " alt="portfolio item ">
+                            <h3 class="text-capitalize fs-5 my-2 ">C# Pos-Inventory System</h3>
+                            <p class="mb-4 ">
+                                <!-- <a href="# " class="text-danger text-decoration-none ">live demo</a> -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="portfolio-item gallery ">
+                            <img src="img/medicine-inventory-system.png " class="gallery w-100 img-thumbnail " alt="portfolio item ">
+                            <h3 class="text-capitalize fs-5 my-2 ">Web Medicine-Inventory System</h3>
+                            <p class="mb-4 ">
+                                <!-- <a href="# " class="text-danger text-decoration-none ">live demo</a> -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item gallery">
+                            <img src="img/business bochure Photoshop.jpg " class="gallery w-100 img-thumbnail " alt="portfolio item ">
+                            <h3 class="text-capitalize fs-5 my-2 ">Design Business Psd</h3>
+                            <p class="mb-4 ">
+                                <!-- <a href="# " class="text-danger text-decoration-none ">live demo</a> -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item gallery">
+                            <img src="img/Photoshop Company Brochure.jpg" class="gallery w-100 img-thumbnail " alt="portfolio item ">
+                            <h3 class="text-capitalize fs-5 my-2 ">Brochure Company Psd</h3>
+                            <p class="mb-4 ">
+                                <!-- <a href="# " class="text-danger text-decoration-none ">live demo</a> -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="portfolio-item gallery ">
+                            <img src="img/apps.png " class="gallery w-100 img-thumbnail " alt="portfolio item ">
+                            <h3 class="text-capitalize fs-5 my-2 ">Canteen Manager Android Application</h3>
+                            <p class="mb-4 ">
+                                <!-- <a href="# " class="text-danger text-decoration-none ">live demo</a> -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel "></h5>
+                        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class=" modal-body">
+                        <img src="img/medicine-inventory-system.png" class="modal-img" alt="modal img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio section End -->
+        
+        <!-- contact section start -->
+        <div>
+            <section class="contact bg-white shadow-lg py-5" id="contact">
+                <div class="container-lg-py-4">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center">
+                                <h2 class="fw-bold mb-5 text-danger">Contact Me</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-3 ">
+                            <div class="contact item d-flex mb-3">
+                                <div class="icon fs-3 text-warning">
+                                    <i class="ms-5 fas fa-envelope"></i>
+                                </div>
+                                <div class="text ms-4">
+                                    <h3 class="fs-5">Email:</h3>
+                                    <p class="text-muted">olivaregabby25@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact item d-flex mb-3">
+                                <div class="icon fs-3 text-warning">
+                                    <i class=" ms-5 fas fa-phone"></i>
+                                </div>
+                                <div class="text ms-4">
+                                    <h3 class="fs-5">Phone:</h3>
+                                    <p class="text-muted ">09067702698</p>
+                                </div>
+                            </div>
+                            <div class="contact item d-flex mb-3 ">
+                                <div class="icon fs-3 text-warning ">
+                                    <i class="ms-5 fas fa-map-marker-alt "></i>
+                                </div>
+                                <div class="text ms-4">
+                                    <h3 class="fs-5">Address:</h3>
+                                    <p class="text-muted">Blk 17 Lot 13 Aldea Real</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="embed-responsive embed-responsive-16by9 mb-3 ">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.1982303822315!2d121.11353871436489!3d14.183164840973173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd637b62801c8d%3A0x796172d1da148cee!2sAldea%20Real%2C%20Calamba%2C%204027%20Laguna!5e0!3m2!1sen!2sph!4v1625410912734!5m2!1sen!2sph
+                                    " class="embed-responsive embed-responsive-21by9 " width="100% " height="400 " style="border: 1px; " allowfullscreen=" " loading="lazy " scrolling="auto "></iframe>
+                                </div>
+                            </div>
+                            <div class="contact-form ">
+                                <form id="myForm " action="index.php " method="POST " accept-charset="utf-8 " required>
+                                    <div class="alert alert-warning alert-dismissible fade show " role="alert " style="display:none; "><strong class="faded "></strong>
+                                        <button type="button " class="btn-close" data-bs-dismiss="alert" aria-label="Close "></button>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-6 mb-4 ">
+                                            <input  type="text " required id="name" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 bg-light shadow-sm" >
+                                        </div>
+                                        <div class="col-lg-6 mb-4 ">
+                                            <input type="email"  id="email" placeholder="Your Email:" class="form-control form-control-lg fs-6 border-0 bg-light shadow-sm " required>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-12 mb-4">
+                                            <input type="text "  id="subject" placeholder="Your Subject:" class="form-control form-control-lg fs-6 border-0 bg-light shadow-sm" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-4">
+                                            <textarea rows="5 " id="body" placeholder="Your Message:" class="form-control form-control-lg fs-6 border-0 bg-light shadow-sm" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-lg-12 mb-4">
+                                            <button type="submit "onclick="sendEmail()" return false class="btn btn-warning px-3 fw-bold">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- contact section end -->
+            
+            <!-- footer start -->
+            <footer class="footer border-top py-4 bg-white shadow-lg">
+                <div class="container-lg">
+                    <div class="row ">
+                        <div class="col-lg-12">
+                            <p class="m-0 text-center text-muted">&copy; 2021 My Portfolio - Gabriel Olivares</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer end -->
+            <script src="js/bootstrap.bundle.min.js"></script>
             <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
-            <script src="js//main.js"></script>
+            <script src="js/main.js"></script>
             
-</body>
-</html>
+        </body>
+        
+    </html>
+</div>
