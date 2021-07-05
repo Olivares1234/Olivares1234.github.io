@@ -53,14 +53,17 @@ $(document).ready(function() {
     $(document).on('submit', '#myForm', function() {
         return false;
     });
-}); 
 
 
-
-// typing text animation script
+    // typing text animation script
 var typed = new Typed(".typing", {
     strings: ["Web Designer", "Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
 });
+
+}); 
+
+
+
